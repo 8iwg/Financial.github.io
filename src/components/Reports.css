@@ -1,0 +1,178 @@
+.reports-page {
+  animation: fadeIn 0.5s ease-out;
+}
+
+.report-controls {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  align-items: end;
+}
+
+.filter-btn {
+  height: fit-content;
+}
+
+.report-content {
+  padding: 20px 0;
+}
+
+.report-section {
+  margin-bottom: 30px;
+  border: 1px solid #1a1a1a;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.section-header {
+  padding: 18px 25px;
+  border-bottom: 2px solid #1a1a1a;
+}
+
+.revenue-header {
+  background: linear-gradient(135deg, rgba(76, 175, 80, 0.15) 0%, rgba(76, 175, 80, 0.05) 100%);
+  border-bottom-color: rgba(76, 175, 80, 0.3);
+}
+
+.expense-header {
+  background: linear-gradient(135deg, rgba(244, 67, 54, 0.15) 0%, rgba(244, 67, 54, 0.05) 100%);
+  border-bottom-color: rgba(244, 67, 54, 0.3);
+}
+
+.cashflow-header {
+  background: linear-gradient(135deg, rgba(33, 150, 243, 0.15) 0%, rgba(33, 150, 243, 0.05) 100%);
+  border-bottom-color: rgba(33, 150, 243, 0.3);
+}
+
+.section-title {
+  font-size: 18px;
+  font-weight: 700;
+  color: #ffffff;
+  margin: 0;
+}
+
+.report-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 25px;
+  background: #000000;
+  border-bottom: 1px solid #0d0d0d;
+  transition: all 0.2s ease;
+}
+
+.report-item:hover {
+  background: #0d0d0d;
+  padding-right: 30px;
+}
+
+.item-name {
+  font-size: 15px;
+  color: #b0b0b0;
+  font-weight: 500;
+}
+
+.item-amount {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.revenue-amount {
+  color: #4CAF50;
+}
+
+.expense-amount {
+  color: #f44336;
+}
+
+.cashflow-positive {
+  color: #4CAF50;
+}
+
+.cashflow-negative {
+  color: #f44336;
+}
+
+.section-total,
+.section-subtotal {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 25px;
+  background: linear-gradient(135deg, #1a1a1a 0%, #0d0d0d 100%);
+  font-size: 16px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.section-subtotal {
+  font-size: 15px;
+  padding: 16px 25px;
+}
+
+.total-amount,
+.subtotal-amount {
+  font-size: 20px;
+  font-weight: 900;
+}
+
+.report-summary {
+  margin-top: 40px;
+  padding: 30px;
+  background: linear-gradient(135deg, #2a2a2a 0%, #1a1a1a 100%);
+  border-radius: 16px;
+  border: 2px solid #2a2a2a;
+}
+
+.summary-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+  border-bottom: 1px solid #333;
+}
+
+.summary-item:last-child {
+  border-bottom: none;
+}
+
+.summary-label {
+  font-size: 20px;
+  font-weight: 700;
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.summary-amount {
+  font-size: 32px;
+  font-weight: 900;
+}
+
+.summary-amount.profit {
+  color: #4CAF50;
+}
+
+.summary-amount.loss {
+  color: #f44336;
+}
+
+@media (max-width: 768px) {
+  .report-controls {
+    grid-template-columns: 1fr;
+  }
+
+  .report-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .summary-label {
+    font-size: 16px;
+  }
+
+  .summary-amount {
+    font-size: 24px;
+  }
+}

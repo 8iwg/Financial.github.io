@@ -1,0 +1,36 @@
+.salaries-page {
+  animation: fadeIn 0.5s ease-out;
+}
+
+.salary-calculation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background: linear-gradient(135deg, #2a2a2a 0%, #1a1a1a 100%);
+  border-radius: 12px;
+  margin: 25px 0;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.calculated-amount {
+  color: #4CAF50;
+  font-size: 24px;
+  font-weight: 900;
+}
+
+.font-bold {
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.positive {
+  color: #4CAF50;
+  font-weight: 600;
+}
+
+.negative {
+  color: #f44336;
+  font-weight: 600;
+}
